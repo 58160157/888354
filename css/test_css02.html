@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+    width: 300px;
+    height: 100px;
+    background-color: yellow;
+    border: 1px solid black;    
+    transform: translate(50px,100px); /* Standard syntax */
+}
+div#myDiv1 {
+    width: 100px;
+    height: 100px;
+    background: red;
+    transition: width 2s, height 4s;
+}
+
+div#myDiv1:hover {
+    width: 300px;
+    height: 300px
+	background-color:rgb(255,0,0);opacity:0.6;
+	transition: 4s;
+	background: blue;
+}
+</style>
+</head>
+<body>
+
+<div>
+This div element is moved 50 pixels to the right, and 100 pixels down from its current position.
+</div>
+<div id ="myDiv1"></div>
+</body>
+</html>
